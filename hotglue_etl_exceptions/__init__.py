@@ -11,5 +11,10 @@ class InvalidPayloadError(Exception):
     pass
 
 
-__all__ = ['InvalidCredentialsError', 'InvalidPayloadError']
+class InsufficientPermissionsError(InvalidCredentialsError):
+    """Exception raised when credentials lack the required permission scope."""
+    pass
+
+
+__all__ = ['InvalidCredentialsError', 'InvalidPayloadError', 'InsufficientPermissionsError']
 

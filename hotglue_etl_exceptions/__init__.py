@@ -11,7 +11,7 @@ class InvalidPayloadError(Exception):
     pass
 
 
-class InsufficientPermissionsError(Exception):
+class InsufficientPermissionsError(InvalidCredentialsError):
     """Exception raised when credentials lack the required permission scope."""
     pass
 

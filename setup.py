@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='hotglue-etl-exceptions',
-    version='0.2.0',
+    version='0.1.1',
     description='Exception classes for Hotglue ETL',
     packages=find_packages(),
     python_requires='>=3.6',
